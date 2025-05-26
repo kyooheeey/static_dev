@@ -1,0 +1,16 @@
+@use '../global/' as g;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 67px;
+  @include g.mq_up-pc {
+    scroll-padding-top: 84px;
+  }
+}
+
+body {
+
+  &.is-fixed {
+    overflow: hidden;
+  }
+}

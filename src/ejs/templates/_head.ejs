@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="robots" content="noindex"/>
+
+  <title><%= meta.title %></title>
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="description" content="<%= meta.description %>">
+  <meta property="og:title" content="<%= meta.title %>">
+  <meta name="twitter:title" content="<%= meta.title %>">
+  <meta property="og:site_name" content="<%= meta.title %>">
+  <meta property="og:description" content="<%= meta.description %>">
+  <meta name="twitter:description" content="<%= meta.description %>">
+  <meta property="og:url" content="<%= meta.url %>">
+  <meta name="twitter:site" content="<%= meta.url %>">
+  <meta property="og:image" content="">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <meta name="twitter:site" content="" />
+
+  <link rel="canonical" href="<%= meta.url %>">
+
+  <!-- favicon -->
+  <meta name="msapplication-square70x70logo" content="<%= meta.filePath %>favicons/site-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="<%= meta.filePath %>favicons/site-tile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="<%= meta.filePath %>favicons/site-tile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="<%= meta.filePath %>favicons/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<%= meta.filePath %>favicons/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="<%= meta.filePath %>favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="<%= meta.filePath %>favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="<%= meta.filePath %>favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<%= meta.filePath %>favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="<%= meta.filePath %>favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<%= meta.filePath %>favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="<%= meta.filePath %>favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<%= meta.filePath %>favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="<%= meta.filePath %>favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= meta.filePath %>favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="<%= meta.filePath %>favicons/android-chrome-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="<%= meta.filePath %>favicons/android-chrome-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="<%= meta.filePath %>favicons/android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<%= meta.filePath %>favicons/android-chrome-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="<%= meta.filePath %>favicons/android-chrome-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="<%= meta.filePath %>favicons/android-chrome-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="<%= meta.filePath %>favicons/android-chrome-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="<%= meta.filePath %>favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="<%= meta.filePath %>favicons/android-chrome-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="<%= meta.filePath %>favicons/android-chrome-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="<%= meta.filePath %>favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="<%= meta.filePath %>favicons/icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="<%= meta.filePath %>favicons/icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="<%= meta.filePath %>favicons/icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<%= meta.filePath %>favicons/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="<%= meta.filePath %>favicons/icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="<%= meta.filePath %>favicons/icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="<%= meta.filePath %>favicons/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="<%= meta.filePath %>favicons/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="<%= meta.filePath %>favicons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="<%= meta.filePath %>favicons/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="<%= meta.filePath %>favicons/icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="<%= meta.filePath %>favicons/icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="<%= meta.filePath %>favicons/icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= meta.filePath %>favicons/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="24x24" href="<%= meta.filePath %>favicons/icon-24x24.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= meta.filePath %>favicons/icon-32x32.png">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="<%= meta.filePath %>assets/css/style.min.css">
+</head>
+
+<body id="<%= meta.id %>" class="p-<%= meta.id %>">

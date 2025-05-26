@@ -1,0 +1,10 @@
+@use '../global/' as g;
+@use "sass:math";
+
+.u-inner {
+  width: math.div(342, 390) * 100%;
+  margin: 0 auto;
+  @include g.mq_up-pc {
+    width: math.div(1360, 1440) * 100%;
+  }
+}

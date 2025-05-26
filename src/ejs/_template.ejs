@@ -1,0 +1,39 @@
+<!--
+***コピペ集***
+-->
+
+<!-- 相対パス -->
+<%= meta.filePath %>
+
+<!-- picture -->
+<picture>
+  <source media="<%= meta.bp %>" srcset="<%= meta.filePath %>assets/images/" />
+  <img src="<%= meta.filePath %>assets/images/" alt="image" />
+</picture>
+
+<picture>
+  <!-- スマホ用 WebP -->
+  <source
+    srcset="<%= meta.filePath %>assets/images/sp-image.webp"
+    type="image/webp"
+    media="<%= meta.bp %>"
+  />
+  <!-- スマホ用 JPG/PNG -->
+  <source srcset="<%= meta.filePath %>assets/images/sp-image.jpg" media="<%= meta.bp %>" />
+  <!-- PC用 WebP -->
+  <source
+    srcset="<%= meta.filePath %>assets/images/pc-image.webp"
+    type="image/webp"
+    media="(min-width: 768px)"
+  />
+  <!-- PC用 JPG/PNG -->
+  <source srcset="<%= meta.filePath %>assets/images/pc-image.jpg" media="(min-width: 768px)" />
+  <!-- フォールバック画像（古いブラウザ用） -->
+  <img src="<%= meta.filePath %>assets/images/pc-image.jpg" alt="説明文" />
+</picture>
+
+<!-- インクルードに変数渡す時 -->
+<%- include('./templates/_parts', {meta: meta, var: 'テキスト'}) %>
+
+<!-- ループ -->
+<% list.forEach(function(item, index) { %> <% }) %>

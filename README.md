@@ -14,7 +14,7 @@
 
 ## 必要条件
 
-- Node.js (v14以上推奨)
+- Node.js (v20以上推奨)
 - npm (v6以上推奨)
 
 ## インストール
@@ -90,6 +90,6 @@ npm run prod
 - imagemin
 - gulp-webp
 
-## ライセンス
+## その他
 
-ISC
+ - ファビコン生成（https://ao-system.net/favicongenerator/）
